@@ -4,7 +4,8 @@ import './App.css';
 // import MyClock from './02/MyClock';
 // import MyDiv1 from './03/MyDiv1';
 // import MyList from './04/MyList';
-import Lotto from './05/Lotto';
+// import Lotto from './05/Lotto';
+import Traffic from './06/Traffic';
 
 import { RiHomeHeartFill } from "react-icons/ri";
 function App() {
@@ -15,9 +16,11 @@ function App() {
         <p><RiHomeHeartFill /></p>
       </header>
       <main className='grow w-full flex justify-center items-center overflow-y-auto'>
+        {/* <MyClock /> */}
         {/* <MyDiv1 /> */}
         {/* <MyList /> */}
-        <Lotto />
+        {/* <Lotto /> */}
+        <Traffic />
       </main>
       <footer className='flex justify-center items-center h-20 bg-black text-slate-100'>
         ⓒ Kim Kyung Min
