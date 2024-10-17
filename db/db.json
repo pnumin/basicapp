@@ -1,0 +1,21 @@
+{
+  "posts": [
+    {
+      "id": "563b",
+      "title": "태종대 관광",
+      "author": "오소영"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "This is a comment1.",
+      "postId": 1
+    },
+    {
+      "id": "2",
+      "body": "This is a comment2.",
+      "postId": 1
+    }
+  ]
+}

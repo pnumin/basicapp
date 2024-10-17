@@ -48,8 +48,8 @@ export default function Gallery() {
     setCards(tm) ;
   }, [tdata]) ;
   return (
-    <div className="w-full h-full flex flex-col justify-start items-center">
-      <form className="w-10/12 h-24 flex justify-center items-center">
+    <div className="w-full flex flex-col justify-start items-center">
+      <form className="w-10/12 h-32 flex justify-center items-center">
       <div>
         <input type="text" id="txt1"
               ref ={inRef}
