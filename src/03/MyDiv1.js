@@ -4,7 +4,7 @@ export default function MyDiv1() {
   const d2 = 'div2' ;
   const d3 = 'div3' ;
   return (
-    <div className="flex flex-col p-5
+    <div className="flex flex-col p-5 mt-10
                     justify-center items-center
                     w-2/3 h-2/3 text-2xl
                     bg-lime-900 text-white">

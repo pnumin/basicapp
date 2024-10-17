@@ -10,13 +10,16 @@ import Traffic from './06/Traffic';
 import MyRefAdd from './07/MyRefAdd';
 import Gallery from './08/Gallery';
 // import RouteMain from './09/RouteMain';
+import RecoilMain from './10/RecoilMain';
+import Rest from './12/Rest';
+
 import { RiHomeHeartFill } from "react-icons/ri";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 function App() {
   return (
     <BrowserRouter>
-      <div className="flex flex-col w-full min-h-screen mx-auto">
+      <div className="flex flex-col w-full h-screen mx-auto">
         <header className='flex justify-between items-center text-xl font-bold h-20 p-10 bg-slate-200'>
           <p>리액트 기초</p>
           <ul className='flex justify-center items-center text-sm'>
@@ -40,19 +43,31 @@ function App() {
                          hover:bg-white hover:text-blue-600'>
               <Link to='/gallery'>관광</Link>
             </li>
+            <li className='mx-2 p-2 rounded-md
+                         hover:bg-white hover:text-blue-600'>
+              <Link to='/recoil'>Recoil예제</Link>
+            </li>
+            <li className='mx-2 p-2 rounded-md
+                         hover:bg-white hover:text-blue-600'>
+              <Link to='/rest'>JSON CRUD예제</Link>
+            </li>
           </ul>
           <p><Link to='/'><RiHomeHeartFill /></Link></p>
         </header>
-        <main className='grow w-full flex justify-center items-start overflow-y-auto'>
+        <main className='flex-grow w-full h-full flex justify-center items-start overflow-y-auto'>
           <Routes>
-            <Route path='/' element={<MyClock />} />
+            <Route path='/' element={<MyClock />} /> 
             <Route path='/lotto' element={<Lotto />} />
             <Route path='/traffic' element={<Traffic />} />
             <Route path='/add' element={<MyRefAdd />} />
             <Route path='/gallery' element={<Gallery />} />
+            <Route path='/recoil' element={<RecoilMain />} />
+            <Route path='/rest' element={<Rest />} />
           </Routes>
         </main>
-        <footer className='flex justify-center items-center h-20 bg-black text-slate-100'>
+        <footer className='flex justify-center items-center 
+                           h-20 flex-shrink-0
+                           bg-black text-slate-100'>
           ⓒ Kim Kyung Min
         </footer>
 
